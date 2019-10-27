@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>元素等宽高</title>
+		<script type="text/javascript" src="sameHW.js"></script>
+	</head>
+	<body>
+		<div id="c">
+			<div class="a" style=" background-color: #ED8689;float: left;">
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+			</div>
+			<div class="a" style="background-color: #18B566;float: left;">
+				<div>test</div>
+				<div>test 测试</div>
+				<div>test</div>
+				<div>test</div>
+			</div>
+		</div>
+		
+		<div class="b">
+			<div class="a" style="background-color: #1E768C;float: left;">
+				<div>test</div>
+				<div>test测试</div>
+			</div>
+			<div class="a" style="background-color: #CAADCC;float: left;">
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		window.onload = function() {
+			//	sameHW.setSameHWTage("*","a",1);	//所有class为a的元素等高
+			//	sameHW.setSameHWTage("*","a",2);	//所有class为a的元素等宽
+			sameHW.setSameHWTage("*","a",0);	//所有class为a的元素等宽高
+			//sameHW.setSameHWClass("b", "a", 1); //class为b的元素中所有class为a的子元素等高
+			//sameHW.setSameHWClass("b", "a", 2); //class为b的元素中所有class为a的子元素等宽
+			//sameHW.setSameHWClass("b", "a", 0); //class为b的元素中所有class为a的子元素等宽高
+			//sameHW.setSameHWId("c", "a", 1); //ID为c的元素中所有class为a的子元素等高
+			//sameHW.setSameHWId("c", "a", 2); //ID为c的元素中所有class为a的子元素等宽
+			//sameHW.setSameHWId("c", "a", 0); //ID为c的元素中所有class为a的子元素等宽高
+		}
+	</script>
+</html>
