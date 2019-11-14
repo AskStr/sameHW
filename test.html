@@ -4,28 +4,34 @@
 		<meta charset="utf-8">
 		<title>元素等宽高</title>
 		<script type="text/javascript" src="sameHW.js"></script>
+		<style>
+			.a{
+				float: left;
+				margin: 0.3125rem;
+			}
+		</style>
 	</head>
 	<body>
-		<div id="c">
-			<div class="a" style=" background-color: #ED8689;float: left;">
+		<div id="b">
+			<div class="a" style=" background-color: #ED8689;">
 				<div>test</div>
 				<div>test</div>
 				<div>test</div>
 			</div>
-			<div class="a" style="background-color: #18B566;float: left;">
+			<div class="a" style="background-color: #18B566;">
 				<div>test</div>
-				<div>test 测试</div>
+				<div>test测试</div>
 				<div>test</div>
 				<div>test</div>
 			</div>
 		</div>
-		
-		<div class="b">
-			<div class="a" style="background-color: #1E768C;float: left;">
+		</br>
+		<div class="c">
+			<div class="a" style="background-color: #1E768C;">
 				<div>test</div>
 				<div>test测试</div>
 			</div>
-			<div class="a" style="background-color: #CAADCC;float: left;">
+			<div class="a" style="background-color: #CAADCC;">
 				<div>test</div>
 				<div>test</div>
 				<div>test</div>
@@ -34,18 +40,56 @@
 				<div>test</div>
 			</div>
 		</div>
+		<div class="c">
+			<div class="a" style="background-color: #1E768C;">
+				<div>test</div>
+				<div>test测试</div>
+			</div>
+			<div class="a" style="background-color: #CAADCC;">
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+			</div>
+		</div>
+		<br>
+		<div class="d">
+			<div class="a" style="background-color: #1E768C;">
+				<div>test</div>
+				<div>test测试</div>
+			</div>
+			<div class="a" style="background-color: #CAADCC;">
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+				<div>test</div>
+			</div>
+		</div>
+		<script>
+			window.onload = function() {
+				// sameHW.setSameHWTage("*","a",1);	//所有class为a的元素等高
+				// sameHW.setSameHWTage("*","a",2);	//所有class为a的元素等宽
+				// sameHW.setSameHWTage("*","a",3);	//所有class为a的元素等宽高
+				sameHW.setSameHWTage("*","a",4);	//所有class为a的元素顶边分组等高
+				// sameHW.setSameHWTage("*","a",5);	//所有class为a的元素左边分组等宽
+				// sameHW.setSameHWTage("*","a",6);	//所有class为a的元素顶边分组等高、左边分组等宽
+				// sameHW.setSameHWClass("b", "a", 1); //class为b的元素中所有class为a的子元素等高
+				// sameHW.setSameHWClass("b", "a", 2); //class为b的元素中所有class为a的子元素等宽
+				// sameHW.setSameHWClass("b", "a", 3); //class为b的元素中所有class为a的子元素等宽高
+				// sameHW.setSameHWClass("b", "a", 4); //class为b的元素中所有class为a的子元素顶边分组等高
+				// sameHW.setSameHWClass("b", "a", 5); //class为b的元素中所有class为a的子元素左边分组等宽
+				// sameHW.setSameHWClass("b", "a", 6); //class为b的元素中所有class为a的子元素顶边分组等高、左边分组等宽
+				// sameHW.setSameHWId("c", "a", 1); //ID为c的元素中所有class为a的子元素等高
+				// sameHW.setSameHWId("c", "a", 2); //ID为c的元素中所有class为a的子元素等宽
+				// sameHW.setSameHWId("c", "a", 3); //ID为c的元素中所有class为a的子元素等宽高
+				// sameHW.setSameHWId("c", "a", 4); //ID为c的元素中所有class为a的子元素顶边分组等高
+				// sameHW.setSameHWId("c", "a", 5); //ID为c的元素中所有class为a的子元素左边分组等宽
+				// sameHW.setSameHWId("c", "a", 6); //ID为c的元素中所有class为a的子元素顶边分组等高、左边分组等宽
+			}
+		</script>
 	</body>
-	<script>
-		window.onload = function() {
-			//	sameHW.setSameHWTage("*","a",1);	//所有class为a的元素等高
-			//	sameHW.setSameHWTage("*","a",2);	//所有class为a的元素等宽
-			sameHW.setSameHWTage("*","a",0);	//所有class为a的元素等宽高
-			//sameHW.setSameHWClass("b", "a", 1); //class为b的元素中所有class为a的子元素等高
-			//sameHW.setSameHWClass("b", "a", 2); //class为b的元素中所有class为a的子元素等宽
-			//sameHW.setSameHWClass("b", "a", 0); //class为b的元素中所有class为a的子元素等宽高
-			//sameHW.setSameHWId("c", "a", 1); //ID为c的元素中所有class为a的子元素等高
-			//sameHW.setSameHWId("c", "a", 2); //ID为c的元素中所有class为a的子元素等宽
-			//sameHW.setSameHWId("c", "a", 0); //ID为c的元素中所有class为a的子元素等宽高
-		}
-	</script>
+	
 </html>
